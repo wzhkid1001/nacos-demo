@@ -1,0 +1,19 @@
+server:
+  port: 9911
+spring:
+  application:
+    name: nacos-ats
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 5856168a-b3de-48d3-ad3f-484ef3114fd4
+#        group: ats-dev
+      config:
+        server-addr: 127.0.0.1:8848
+        prefix: ${spring.application.name}
+        file-extension: yml
+        namespace: 5856168a-b3de-48d3-ad3f-484ef3114fd4
+#        group: ats-dev
