@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: nacos-provide
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+#        namespace: f5654638-f0db-4132-a306-da38fcc7aca0
+        namespace: 3aa061b5-3ddb-4a4d-80a1-dfeb85d69296
